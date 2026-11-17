@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contacto | Cauchera Móvil</title>
+  <meta name="description" content="Pide tu servicio de cauchera móvil: escríbenos por WhatsApp o con el formulario.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Saltar al contenido</a>
+
+  <header class="site-header">
+    <div class="wrap bar">
+     <a class="brand" href="index.html">
+        <img class="brand-logo" src="/src/logo.jpeg" alt="Logo Cauchera Móvil" width="44" height="44">
+        <div>Cauchera <span>Móvil</span></div>
+      </a>
+      <button class="menu-btn" aria-expanded="false" aria-controls="nav">Menú ☰</button>
+      <nav id="nav" aria-label="Principal">
+        <a href="index.html">Inicio</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="productos.html">Productos</a>
+        <a href="contacto.html" aria-current="page">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-head">
+      <div class="wrap">
+        <span class="eyebrow"><span class="pulse-dot"></span> Atención Inmediata</span>
+        <h1>Contacto</h1>
+        <p class="lead">Cuéntanos qué necesitas y dónde estás ubicado. Al enviar el formulario se abrirá WhatsApp con tu reporte listo.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap two">
+        <div>
+          <form id="contacto-form" novalidate>
+            <label>Nombre completo
+              <input name="nombre" type="text" autocomplete="name" placeholder="Ej. Carlos Pérez" required aria-describedby="e-nombre">
+              <span class="err" id="e-nombre" aria-live="polite"></span>
+            </label>
+
+            <label>Teléfono de contacto
+              <input name="telefono" type="tel" autocomplete="tel" inputmode="tel" placeholder="Ej. 0424-7127244" required aria-describedby="e-telefono">
+              <span class="err" id="e-telefono" aria-live="polite"></span>
+            </label>
+
+            <label>Servicio requerido
+              <select name="servicio">
+                <option value="Cambio de caucho">Cambio de caucho</option>
+                <option value="Reparación de pinchazo">Reparación de pinchazo</option>
+                <option value="Inflado y revisión">Inflado y revisión</option>
+                <option value="Compra de neumáticos">Compra de neumáticos / Accesorios</option>
+              </select>
+            </label>
+
+            <label>Ubicación y detalles del vehículo
+              <textarea name="mensaje" rows="4" required aria-describedby="e-mensaje" placeholder="Indica tipo de vehículo (moto/carro/camioneta), medida si la conoces y punto de referencia..."></textarea>
+              <span class="err" id="e-mensaje" aria-live="polite"></span>
+            </label>
+
+            <button class="btn" type="submit">Enviar solicitud por WhatsApp →</button>
+          </form>
+
+          <p class="ok" id="gracias" hidden role="status">
+            ✅ ¡Listo! Se abrió WhatsApp con tu solicitud estructurada; presiona enviar en el chat para despachar tu unidad.
+          </p>
+        </div>
+
+        <dl class="info">
+          <div>
+            <dt>📍 Zona de cobertura primaria</dt>
+            <dd>Las Vegas de Táriba, Cárdenas y zonas aledañas del estado Táchira.</dd>
+          </div>
+          <div>
+            <dt>🕒 Horario de servicio móvil</dt>
+            <dd>Lunes a Domingo, de 7:00 a. m. a 10:00 p. m.</dd>
+          </div>
+          <div>
+            <dt>📞 Línea de atención directa</dt>
+            <dd><a href="tel:+584247127244">0424-7127244</a></dd>
+          </div>
+          <div>
+            <dt>💬 Despacho rápido por WhatsApp</dt>
+            <dd><a href="https://wa.me/584247127244" target="_blank" rel="noopener noreferrer">Iniciar chat ahora</a></dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+  </main>
+
+  <a class="wa-float" href="https://wa.me/584247127244" target="_blank" rel="noopener noreferrer" aria-label="Escribir por WhatsApp">
+    💬 WhatsApp Directo
+  </a>
+
+  <footer>
+  <div class="wrap footer-row">
+      <p><strong>Cauchera Móvil</strong> · «No competimos, servimos» · Las Vegas de Táriba, Táchira · &copy; 2026</p>
+    </div>
+  </footer>
+</body>
+</html>
